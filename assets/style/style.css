@@ -1,0 +1,118 @@
+.text-area {
+  width: 65%;
+  height: 200px;
+  resize: none;
+  display: block;
+  margin: 0 auto;
+  outline-color: darkcyan;
+  font-size: 19px;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 3px;
+}
+.keyboard {
+  width: 80%;
+  position: absolute;
+  bottom: 0;
+  left: 10%;
+  margin: 0;
+  padding: 5px;
+  background-color: #2e2a3c;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px -1px 14px 5px rgb(71, 55, 105);
+  -moz-box-shadow: 0px -1px 14px 5px rgb(71, 55, 105);
+  box-shadow: 0px -1px 14px 5px rgb(71, 55, 105);
+}
+.keys {
+  text-align: center;
+}
+.key {
+  height: 45px;
+  max-width: 90px;
+  margin: 3px;
+  width: 5%;
+  color: #000000;
+  font-size: 19px;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 3px;
+  border: none;
+  background-color: rgb(143, 191, 255);
+  cursor: pointer;
+  outline: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: top;
+  -webkit-tap-highlight-color: transparent;
+  position: relative;
+}
+.backspace {
+  background-image: url(../icons/icons8-backspace-50.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  height: 45px;
+  width: 40px;
+}
+.enter {
+  background-image: url(../icons/icons8-enter-50.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  height: 45px;
+  width: 40px;
+}
+.caps-lock {
+  background-image: url(../icons/icons8-caps-lock-50.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  height: 45px;
+  width: 40px;
+}
+.space-bar{
+  background-image: url(../icons/icons8-horizontal-line-50.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  height: 45px;
+  width: 40px;
+}
+.win{
+  background-image: url(../icons/icons8-windows8-50.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  height: 45px;
+  width: 40px;
+}
+.tab{
+  background-image: url(../icons/icons8-tab-mac-50.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  height: 45px;
+  width: 40px;
+}
+.key:active {
+  background-color: #ffffff3b;
+}
+.wide {
+  width: 10%;
+}
+.extra-wide {
+  width: 27.3%;
+  max-width: 500px;
+}
+.activatable::after {
+  content: '';
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background-color: #2f492f;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+.active::after {
+  background-color: greenyellow;
+}
