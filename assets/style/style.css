@@ -1,6 +1,6 @@
 .text-area {
   width: 65%;
-  height: 200px;
+  height: 150px;
   resize: none;
   display: block;
   margin: 0 auto;
@@ -10,7 +10,7 @@
   border-radius: 3px;
 }
 .keyboard {
-  width: 80%;
+  width: 83%;
   position: absolute;
   bottom: 0;
   left: 10%;
@@ -29,9 +29,9 @@
   height: 45px;
   max-width: 90px;
   margin: 3px;
-  width: 5%;
-  color: #000000;
-  font-size: 19px;
+  width: 6.5%;
+  color: #ffffff;
+  font-size: 15px;
   font-family: Arial, Helvetica, sans-serif;
   border-radius: 3px;
   border: none;
@@ -44,63 +44,36 @@
   vertical-align: top;
   -webkit-tap-highlight-color: transparent;
   position: relative;
+  transition: border-radius 0.3s ;
 }
-.backspace {
-  background-image: url(../icons/icons8-backspace-50.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 100%;
-  height: 45px;
-  width: 40px;
+@keyframes hover {
+  0% {
+    background:  linear-gradient(86deg, #ffe512, #4960db, #00e6ff);
+    background-position:87px 0px
+  }
+  50% {
+    background:  linear-gradient(86deg, #ffe512, #4960db, #00e6ff);
+    background-position:0px 400px
+  }
+  100% {
+    background:  linear-gradient(86deg, #ffe512, #4960db, #00e6ff);
+    background-position:87px 0px
+  }
 }
-.enter {
-  background-image: url(../icons/icons8-enter-50.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 100%;
-  height: 45px;
-  width: 40px;
+.key:hover {
+  animation: hover 1s ease 1;
+
 }
-.caps-lock {
-  background-image: url(../icons/icons8-caps-lock-50.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 100%;
-  height: 45px;
-  width: 40px;
-}
-.space-bar{
-  background-image: url(../icons/icons8-horizontal-line-50.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 100%;
-  height: 45px;
-  width: 40px;
-}
-.win{
-  background-image: url(../icons/icons8-windows8-50.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 100%;
-  height: 45px;
-  width: 40px;
-}
-.tab{
-  background-image: url(../icons/icons8-tab-mac-50.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 100%;
-  height: 45px;
-  width: 40px;
-}
-.key:active {
+.key:active,
+.key.active {
   background-color: #ffffff3b;
+  border-radius: 15px;
 }
 .wide {
   width: 10%;
 }
 .extra-wide {
-  width: 27.3%;
+  width: 28.6%;
   max-width: 500px;
 }
 .activatable::after {
