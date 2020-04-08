@@ -1,6 +1,6 @@
 #VIRTUAL-KEYBOARD
 
-## How run project
+## How to Run  the project
 
 1. Install EsLint by the command: 
   npx install-peerdeps --dev eslint-config-airbnb-base
